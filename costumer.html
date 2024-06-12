@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+    <link rel="stylesheet" href="css/costumer.css">
+    
+    
+</head>
+<body>
+    <header>
+        <h1>會員中心</h1>
+    </header>
+    <nav>
+        <a href="index.html">商品種類</a>
+        <a href="brand.html">品牌介紹</a>
+        <a href="intro.html">關於我們</a>
+        <a href="costumer.html">會員中心</a>
+    </nav>
+    
+    <main>
+        <div class="clear"></div>
+        <div id='left'>
+            <ul>
+                <li onclick="loginchange()">註冊/登入</li>
+                <li onclick="infochange()">會員資料</li>
+                <li onclick="histchange()">消費紀錄</li>
+                <li onclick="commchange()">評論紀錄</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <aside>
+            <div class="card-person" id="login" style="display: none;">
+                <form style="margin-left: 10px;">
+                    <h3>註冊/登入</h3>
+                    帳號：<input type="account" name="account" size="20"><br>
+                    密碼：<input type="password" name="password" size="20"><br>
+                    性別：
+                    <select name="sex" size="1">
+                        <option value="男性">男性</option>
+                        <option value="女性">女性</option>
+                        <option value="其他">其他</option>
+                    </select>
+                    <br>
+                    生日：<input type="date" name="birthday" size="20"><br>
+                    姓名：<input type="text" name="name" size="20"><br>
+                    電話：<input type="text" name="phone" size="20"><br>
+                    地址：<input type="text" name="address" size="20"><br>
+                    郵件：<input type="text" name="email" size="20"><br>
+                    <button type="submit" value="確認資料" style="margin-top: 10px; margin-bottom: 10px;">確認資料</button>
+                </form>
+            </div>
+
+            <div class="card-person" id="info" style="display: none;">
+                <form style="margin-left: 10px;">
+                    <h3>會員資料</h3>
+                    帳號：<input type="account" name="account" size="20"><br>
+                    密碼：<input type="password" name="password" size="20"><br>
+                    性別：
+                    <select name="sex" size="1">
+                        <option value="男性">男性</option>
+                        <option value="女性">女性</option>
+                        <option value="其他">其他</option>
+                    </select>
+                    <br>
+                    生日：<input type="date" name="birthday"><br>
+                    姓名：<input type="text" name="name" size="20" placeholder="Bruce Chu"><br>
+                    電話：<input type="text" name="phone" size="20" placeholder="0912345678"><br>
+                    地址：<input type="text" name="address" size="20" placeholder="320桃園市中壢區中北路200號"><br>
+                    郵件：<input type="text" name="email" size="20" placeholder="bruce30280369@gmail.com"><br>
+                    <button type="reset" value="重新填寫" style="margin-top: 10px; margin-bottom: 10px;">重新填寫</button>
+                </form>
+            </div>
+
+            <div class="card-person" id="history" style="display: none;">
+                <h3 style="margin-left: 10px;">消費紀錄</h3>
+                <br>
+                <p>
+                    中筒襪&emsp;2 x NT$220&emsp;2024/06/06<br>
+                    後背包&emsp;2 x NT$1980&emsp;2024/06/01<br>
+                    短袖上衣&emsp;1 x NT$1090&emsp;2024/05/13<br>
+                    短版短褲&emsp;5 x NT$990&emsp;2024/04/24<br>
+                </p>
+            </div>
+            
+            <div class="card-person" id="comment" style="display: none;">
+                <h3 style="margin-left: 10px;">評論紀錄</h3>
+                <br>
+                <p>
+                    2024/06/07 &emsp; 襪子超好穿，全家都喜歡，推！<br>
+                </p>
+            </div>
+        </aside>
+        <script src="js/costumer.js"></script>
+    </main>
+    <!-- 左邊組別logo -->
+    <div class="floating-image">
+        <a href="intro.html"><img src="img/logo-ad/logo1.jpg" alt="Floating Image"></a>
+    </div>
+    <!-- 右下回頂端按鈕 -->
+    <button onclick="scrollToTop()" class="scroll-top-btn">TOP</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 平滑滾動
+            });
+        }
+    </script>
+    <footer>
+        <p>copyright@運保組</p>
+    </footer>
+</body>
+</html>

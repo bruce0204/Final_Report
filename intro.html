@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們</title>
+    <link rel="stylesheet" href="css/intro.css">
+</head>
+<body>
+    <header>
+        <h1>關於我們</h1>
+    </header>
+    <nav>
+        <a href="index.html">商品種類</a>
+        <a href="brand.html">品牌介紹</a>
+        <a href="intro.html">關於我們</a>
+        <a href="costumer.html">會員中心</a>
+    </nav>
+    <main>
+        <article>
+            <section class="card">
+                <h2>資管三乙 朱育平</h2>
+                <img src="img/member/member1.jpg" />
+                <p>
+                負責內容：網站架設
+                </p>
+            </section>
+  
+            <section class="card">
+                <h2>資管四甲 劉慕二</h2>
+                <img src="img/member/member2.jpg" />
+                <p>
+                負責內容：決定網站主題及搜尋相關圖片來源
+                </p>
+            </section>
+        </article>
+    </main>
+    <!-- 左邊組別logo -->
+    <div class="floating-image">
+        <a href="intro.html"><img src="img/logo-ad/logo1.jpg" alt="Floating Image"></a>
+    </div>
+    <!-- 右下回頂端按鈕 -->
+    <button onclick="scrollToTop()" class="scroll-top-btn">TOP</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 平滑滾動
+            });
+        }
+    </script>
+    <footer>
+        <p>copyright@運保組</p>
+    </footer>
+</body>
+</html>

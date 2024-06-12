@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>短版短褲</title>
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+    <header>
+        <h1>商品介紹</h1>
+    </header>
+    <nav>
+        <a href="../index.html">商品種類</a>
+        <a href="../brand.html">品牌介紹</a>
+        <a href="../intro.html">關於我們</a>
+        <a href="../costumer.html">會員中心</a>
+    </nav>
+    <main>
+        <article>
+            <section class="card">
+                <h2>短版短褲</h2>
+                <img src="../img/product/短版短褲.jpg" />
+                <p>
+                    <div>
+                        <div>
+                            <h3>商品說明：針織布料具有吸濕快乾功能，適合休閒及一般訓練時穿著</h3>
+                            <form>
+                                <div style="margin-bottom: 20px;">
+                                    <label for="name" style="margin-bottom: 5px;">購買產品：短版短褲&nbsp;990元/件</label>
+                                </div>
+                                <input type="text" placeholder="姓名" id="name" required>
+                                <input type="tel" placeholder="手機" id="phone" required>
+                                <input type="number" placeholder="購買數量" id="quantity" min="0" required>
+                                <input type="text" placeholder="便利商店地址" id="address" required>
+                                <button type="button">確認送出</button>
+                            </form>   
+                        </div>
+                    </div>
+                </p>
+            </section>
+            <section class="card">
+                <h2>商品評分</h2>
+                4星/5星
+            </section>
+            <section class="card">
+                <h2>商品評價</h2>
+                評價：價格還可接受
+            </section>
+        </article>
+    </main>
+    
+    <!-- 左邊組別logo -->
+    <div class="floating-image">
+        <a href="../intro.html"><img src="../img/logo-ad/logo1.jpg" alt="Floating Image"></a>
+    </div>
+    <!-- 右下回頂端按鈕 -->
+    <button onclick="scrollToTop()" class="scroll-top-btn">TOP</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 平滑滾動
+            });
+        }
+    </script>
+
+    <footer>
+        <p>copyright@運保組</p>
+    </footer>
+</body>
+</html>
